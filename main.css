@@ -1,0 +1,14 @@
+/* reset css */
+body {
+  margin: 0;
+}
+.summary_info {
+  background-color: aquamarine;
+}
+.avatar {
+  border-radius: 15%;
+  text-align: center;
+}
+.avatar_box {
+  text-align: center;
+}
