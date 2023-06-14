@@ -8,74 +8,278 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body>
-    <div class="summary_info">
-      <div class="avatar_box">
-        <img class="avatar" src="./avatar.png" />
+    <div class="container" id="personal_info">
+      <div id="avatar_box">
+        <img id="avatar" src="./avatar.png" />
       </div>
+      <div id="basic_info">
+        <p>
+          Xin chào, em là Cao Thanh Tùng, hiện đang là sinh viên năm 3 khoa công
+          nghệ thông tin Việt Nhật, đại học Bách Khoa Hà Nội. Trong tương lai em
+          muốn trở thành 1 chuyên gia về web và app tại Việt Nam.
+        </p>
+      </div>
+    </div>
+
+    <div class="container" id="skills">
       <div>
-        Thông tin liên hệ
-        <div>
-          <span>Địa chỉ:</span>
+        <h3 class="title">Kỹ năng</h3>
+        <ul id="skill">
+          <li>
+            <span
+              >Làm việc với <span class="focus-point">Java</span>: biết sử dụng
+              <span class="focus-point">gradle, maven</span>. Biết lập trình
+              <span class="focus-point">JavaFX</span>, lập trình
+              <span class="focus-point">Android</span>
+            </span>
+          </li>
+          <li>
+            <span
+              >Lập trình server bằng
+              <span class="focus-point">NodeJS (Express).</span>
+            </span>
+          </li>
+          <li>
+            <span
+              >Biết sử dụng
+              <span class="focus-point">HTML5, CSS3, ReactJS.</span></span
+            >
+          </li>
+          <li>
+            <span
+              >Lập trình cơ sở dữ liệu bằng
+              <span class="focus-point">MYSQL</span></span
+            >
+          </li>
+          <li>
+            <span>Đang học lập trình server bằng PHP.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div>
+        <h3 class="title">Kinh nghiệm</h3>
+        <p>
+          <span class="key">Công ty thực tập: </span>
+          <span class="value"
+            >công ty Cổ phần phát triển giải pháp và Công nghệ thông tin Việt
+            Nam</span
+          >
+        </p>
+        <p>
+          <span class="key">Vi trí thực tâp: </span
+          ><span class="value">Lập trình viên Android.</span>
+        </p>
+        <p>
+          <span class="key"> Kết quả thực tâp: </span
+          ><span class="value">
+            nhận được nhận xét tích cực về hầu hết các mặt.</span
+          >
+        </p>
+        <p>
+          <span class="key"> Thành tựu thực tâp: </span
+          ><span class="value"
+            >hoàn thành thư viện giao diện để hiển thị ảnh Before After trên
+            Android</span
+          >
+        </p>
+        <p>
+          <span class="key">Sản phẩm: </span
+          ><span class="value"
+            ><a href="https://github.com/iappa01/before-and-after-view"
+              >Before-After-View</a
+            ></span
+          >
+        </p>
+      </div>
+    </div>
+    <!-- Product -->
+    <div class="container project" id="product">
+      <h3 class="title">Project Before After View</h3>
+      <div class="product">
+        <div class="image-product">
+          <img src="" />
+        </div>
+        <div class="description-product">
           <p>
-            Số 216, xóm 1, thôn Vĩnh Thanh, xã Vĩnh Ngọc, huyện Đông Anh, thành
-            phố Hà Nội
+            <span class="key">Name: </span
+            ><span class="value">Before After View</span>
+          </p>
+          <p>
+            <span class="key">Type: </span
+            ><span class="value">Thư viện Android viết bằng Java</span>
+          </p>
+          <p>
+            <span class="key">Github link: </span
+            ><span class="value"
+              ><a href="https://github.com/iappa01/before-and-after-view"
+                >https://github.com/iappa01/before-and-after-view</a
+              ></span
+            >
+          </p>
+          <p>
+            <span class="key">Mô tả project: </span
+            ><span class="value"
+              >Xây dựng 1 thư viện View của Android để có thể nhìn thấy trực
+              quan sự thay đổi của ảnh trước và sau khi chỉnh sửa</span
+            >
+          </p>
+          <p>
+            <span class="key">Công nghệ sử dụng: </span
+            ><span class="value"
+              >Android, Java, maven repository, github release</span
+            >
           </p>
         </div>
-        <div>
-          <span>Số điện thoại: </span>
-          <p>0373693013</p>
+      </div>
+    </div>
+    <div class="container project" id="product">
+      <h3 class="title">Project Map</h3>
+      <div class="product">
+        <div class="image-product">
+          <img class="demo" src="./demoMap.png" />
         </div>
-        <div>
-          <span>Email: </span>
-          <p>caothanhtung08082002@gmail.com</p>
+        <div class="description-product">
+          <p><span class="key">Name: </span><span class="value">Map</span></p>
+          <p>
+            <span class="key">Type: </span
+            ><span class="value">Ứng dựng web</span>
+          </p>
+          <p>
+            <span class="key">Github link: </span
+            ><span class="value"
+              ><a href="https://github.com/helscarthe/AI-BTL-Nhom11"
+                >https://github.com/helscarthe/AI-BTL-Nhom11</a
+              ></span
+            >
+          </p>
+          <p>
+            <span class="key">Mô tả project: </span
+            ><span class="value"
+              >Tạo 1 Website có thể tìm đường đi giữa 2 điểm trên bản đồ phường
+              Trần Hưng Đạo</span
+            >
+          </p>
+          <p>
+            <span class="key">Công nghệ sử dụng: </span
+            ><span class="value"
+              >Github page, jquery, javascript, HTML5, CSS3, vẽ Canvas</span
+            >
+          </p>
+          <p>
+            <span class="key">Demo: </span
+            ><span class="value"
+              ><a href="https://helscarthe.github.io/AI-BTL-Nhom11/"
+                >Nhấn vào để demo</a
+              ></span
+            >
+          </p>
         </div>
-        <div>
-          <span>Github: </span>
-          <p>https://github.com/Cao-Thanh-Tung</p>
+      </div>
+    </div>
+    <div class="container project" id="product">
+      <h3 class="title">Project History Dictionary</h3>
+      <div class="product">
+        <div class="image-product">
+          <img class="demo" src="" />
+        </div>
+        <div class="description-product">
+          <p>
+            <span class="key">Name: </span
+            ><span class="value">History Dictionary</span>
+          </p>
+          <p>
+            <span class="key">Type: </span
+            ><span class="value">Chương trình JavaFX</span>
+          </p>
+          <p>
+            <span class="key">Github link: </span
+            ><span class="value"
+              ><a href="https://github.com/Cao-Thanh-Tung/HistoryDictionary"
+                >https://github.com/Cao-Thanh-Tung/HistoryDictionary</a
+              ></span
+            >
+          </p>
+          <p>
+            <span class="key">Mô tả project: </span
+            ><span class="value"
+              >Xây dựng 1 phần mềm giúp tra cứu các sự kiên lich sử và các nhân
+              vật lịch sử.</span
+            >
+          </p>
+          <p>
+            <span class="key">Công nghệ và kỹ thuật sử dụng: </span
+            ><span class="value">maven, craw data, java, javafx</span>
+          </p>
         </div>
       </div>
     </div>
 
-    <div>
-      <div>Tóm tắt cơ bản</div>
+    <div class="container">
       <div>
-        Kỹ năng nổi bật
-        <ul>
-          <li>
-            <span>Làm việc với Java: </span> biết sử dụng gradle, maven. Biết
-            lập trình javafx, lập trình android
-          </li>
-        </ul>
+        <h3 class="title">Học tập</h3>
         <p>
-          <span>Notes: </span> đang học về javascript và nodejs để làm web
-          server
+          <span class="key">Năm 2015: </span
+          ><span class="value"> học tại trường THPT Cổ Loa</span>
+        </p>
+        <p>
+          <span class="key">Năm 2018: </span
+          ><span class="value"> học tại trường Đại học Bách Khoa Hà Nội</span>
         </p>
       </div>
+    </div>
+    <div class="container">
       <div>
-        Kinh nghiệm và sản phẩm đã làm
+        <h3 class="title">Chứng chỉ</h3>
+        <div>
+          <p>
+            <span class="key">Năm 2017: </span
+            ><span class="value">
+              Giải nhì học sinh giỏi cấp thành phố môn Hóa</span
+            >
+          </p>
+          <p>
+            <span class="key">Năm 2018: </span
+            ><span class="value"
+              >Hoc bổng khuyến khích học tâp loại B của trường Đại học Bách Khoa
+              Hà Nội</span
+            >
+          </p>
+          <p>
+            <span class="key">Năm 2020: </span
+            ><span class="value">Chứng chỉ JLPT N4</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div id="contact_info">
+        <h3 class="title">Thông tin liên hệ</h3>
         <p>
-          Kinh nghiệm thực tập: đã thực tập vị trí lập trình giao diện android
-          tại công ty MobiAI
+          <span class="key">Địa chỉ:</span>
+          <span class="value">
+            Số 216, xóm 1, thôn Vĩnh Thanh, xã Vĩnh Ngọc, huyện Đông Anh, thành
+            phố Hà Nội
+          </span>
         </p>
-        <p>Các sản phẩm đã thực hiện:</p>
-        <ul>
-          <li>
-            <div class="product">
-              <p>Name</p>
-              <p>Github link</p>
-              <p>Giới thiệu nội dung project</p>
-              <p>Demo</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div>
-        Trình độ học vấn
-        <p>Đang học/ tốt nghiệp tại đâu</p>
-      </div>
-      <div>
-        Chứng chỉ
-        <div>Danh sách các chứng chỉ</div>
+        <p>
+          <span class="key">Số điện thoại: </span>
+          <span class="value">0373693013</span>
+        </p>
+        <p>
+          <span class="key">Email: </span>
+          <span class="value">caothanhtung08082002@gmail.com</span>
+        </p>
+        <p>
+          <span class="key">Github: </span>
+          <span class="value">
+            <a href="https://github.com/Cao-Thanh-Tung"
+              >https://github.com/Cao-Thanh-Tung</a
+            ></span
+          >
+        </p>
       </div>
     </div>
   </body>

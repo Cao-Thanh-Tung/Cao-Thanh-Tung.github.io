@@ -1,14 +1,83 @@
 /* reset css */
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #c0c0c0;
 }
-.summary_info {
-  background-color: aquamarine;
+#avatar {
+  border-radius: 50%;
+  text-align: center;
+  max-width: 300px;
+  min-width: 50px;
+  border: white solid 4px;
 }
-.avatar {
-  border-radius: 15%;
+.container {
+  box-sizing: border-box;
+  background-color: white;
+  border: solid #c0c0c0 2px;
+  margin: 12px;
+  padding: 12px;
+  width: 100%;
+  max-width: 800px;
+  min-width: 200px;
+  border-radius: 25px;
+  box-shadow: black 10px 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#personal_info {
+  background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw8NDw8PDQ8PDQ8NDQ8NDQ8NDQ8PDw0NFRUWFhURFRUYHSggGBolGxUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NFQ8PFS0ZFRktKy0tLS0rKy0rKy0rLS0tLS0tKy0rKy03LS0rLSsrKy0rLS0rKy0rLTUrLisvKysrK//AABEIAL4BCgMBEQACEQEDEQH/xAAZAAEBAQEBAQAAAAAAAAAAAAAAAQIDBAX/xAAsEAEBAAIBAgQEBgMBAAAAAAAAAQIRMQNREkGR0SFxgfAEE1KhseFhksEF/8QAGgEBAQADAQEAAAAAAAAAAAAAAAECBAUDBv/EACoRAQACAQQCAQMCBwAAAAAAAAABAgMEESEiEqExBRNRQWEUMnGRsdHw/9oADAMBAAIRAxEAPwD7OEdFpOmMFbgKgoGlF0gaUNIGgNAaBQUAFAAAAAAUAUEABASwEoICKICaBNAxjEHSRBqAoKC6AAAAUJUFUEFAABQQBRQEE35AoCgACAAzYCACJYozaKCM4xircgNQFBZAKogKADNqDUmgVQQAAWQC0ABQBnKoLICqAAALICUGQQAGMqBIqALMWKroGtAAUAAAF0CSAoAAKACgiggKAJICgAAAAoICAgAMyAAKN6YKaVDQAAAACioICqCAoAoCAAogKCAoAAAAAIACAAgIADrpiqWKJoQBAAUAABQBUBRJNIKoAAAAAAAAAnhBYAAACAAmgATSjvY82SWKjNioyACQFAUAEFAAAUAAAEBQAAAABUBQAA0CAAaBNAmgemx5s2bGSMVUQRi3sCyAAKKgsgFBAAUEBLewLICgigCyICiAoAAJaCyAoIBoDQFBAemx5s2aqMZRUYyiomgAAAAUEABQAKCSAqgAgKKgigAABQJEGlEAA0Corn1OpMeebxJzUtaKxvLPHivkt40jeXH8/Ltj632a/wDFR+HSj6Vbbm8f2fSsezms2KjFioxYrFmgAAgAAKAAAACgAAAKIAAACgILFFQAAAcOp1/0/wC3l9O/3y8MmeK8RzLoabQXydr9a+5cNfvzbzWla02neXcx4qY6+NI2gYs31q6b5RkRjJUYrJGaIgAJICgAAAAtAAAABJAUBQAABUBRUFABjPOY8/HfEnNY2tFY3l64sV8lvGkby4dTK5c8dpx/bTyZ5txHEO1ptBTH2v2t6hnTXdBNKKD6jovlGaqM5KjnVRFRkEAAABQAAAAFFQAAAFBAAUAVBQAc8+p+n19nhkzxXiOZdDTaC+TtfrX3Llr77tK1ptO8y7ePHTHXxpG0GkZpoDQGgfSdF8qlVGclRzqoyogiAAAAmwUAAFAAAAAABNgqgCoKDOWUntOWNrRWN5l6YsV8lvGkby55W3njt5f208mebcRxDt6fQ0x9rdreoNPBvGgTQGgQF0qPoOg+XSqjNUc6rGWdAlVEBAAZyvYGpNAoAAALALQQAAGcqC4wFBQAc8up+n19nhkzxXiOZdDTaC2TtfrX3LMn33aVrTad5drHjpjr40jaG0ZGgNAmgTIDHFRdA99dB8uzQZrJGKqM0RlRBAEoEgKAAAACggAAAEgKADOWUnPp51ja0VjeZemPFfJbxpG8uWWVy547e/dp5M824rxDtabQUx9r9reoI13QbisWoC6ENAmgSRRdAaB7XQfMIozRGKyRiiMqIIAAAAAAAAAAAAAoAOWXV7evl9O7wyZ604jmW/ptBfL2t1r7n/vz/lz/AO8tK15tO8y7mPFTHXxpG0LGLNuRUbkEaggoAaBNAACPY6D5lKDKoxVRiqjNVAAEAAAABJAUAAFABATLKTn6f5S1orG8zw9MeO+S3jSN5cc8rfl292lk1E24rxDtab6fTH2v2t6hGs6KxUXGCNxUbgKIqoVQQNAaUNA9Vb75kBmqjnVRmqjCgIgAAAAAAAAAAoI55dXt6+TwyZ614jmXQ02gvl7W619y5NK17WneZdvFipir40jaFYPRYqLAaio3II1BFVFAUNAaAEAemt980AzVRjJUcsr5RRNaVAQBAUCggAAAJaBICZZyezG1orG8y9MeK+S3jSN5css7fl2aWTUTbivEO3ptBTH2v2t6hlrugsgKqKDUVGpBGoItqouMBpQENAaBaCKj0N582lBKqOeaoxpRKIlUQAFtBBACgAlBJAYz6nb1eGTPFeI5l0NNoL5O1+tfcsVo2tNp3l28eKmOvjSNoRi9FBRFiiyCNSKjUgNCGOKo2oogACiIoIO7ffNoCVUYyUYqozREUQAAQAAAABxuW7Z2vH8NLUXvE+PxDtfT8OGaefzb9/0/p/tmtV1UBQIosEagjUUWCNQRqKiwFVFAAEUAAHZvvm0BKqMZKMVUZoiVRIIAAAAAAlB5fxd8FnUnE+HUk88O/wA5z693llx+df3bek1H2cm8/wAs/Lp8vjOZZxY5z6OJRFTGURpRYI1FGoI1AaEIqNKKIAQRQAVQB0bz5sBKqMVRiqxZBFEEAAAQAAAGc8dwHh/CZfl5Xo5cSXLpXvh54fT+Pk0tTj2nzj9Xb+najyr9u3zHw9VjVdMUUFgjUVGoDQgCxUWKKIoLBAFAUAdG8+bRRKIzVGKqM0RFEEAQFBAAAAQHi/8AR6Pix8WN8OWF8WGXaxJiLRtLOl5paLR8w6/het+bhjnrXinHaz4X95XMvXxtMPp8WT7lIv8Al0YvRQWKjUEUFlAEWKLFRqCKAIoKAqJsH//Z");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#basic_info {
+  padding-left: 5%;
+  padding-right: 5%;
+  color: black;
+  font-weight: 600;
+  max-width: 400px;
+}
+#contact_info {
+}
+.key {
+  font-weight: 600;
+}
+.value {
+  font-style: oblique;
+}
+a {
+  color: black;
+}
+.title {
   text-align: center;
 }
-.avatar_box {
-  text-align: center;
+ul {
+  max-width: 400px;
+}
+.focus-point {
+  color: red;
+}
+#skill li {
+  height: 50px;
+}
+#skills {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_mQD9TAMn-aQggotWo6WuCW8HVPj5415O9g&usqp=CAU");
+  background-size: cover;
+  color: white;
+}
+.project {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.demo {
+  width: 100%;
+  border: solid #c0c0c0 2px;
+  border-radius: 15px;
 }
